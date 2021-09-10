@@ -7,7 +7,7 @@ Future<void> main() async {
   const port = 4040;
   var router = LWDRouter();
   router.get('/greeting', (HttpRequest request) {
-    return LWDResponse.ok("hello world"});
+    return LWDResponse.ok("hello world");
   });
 
   await LWDIO().server(router, address, port);
