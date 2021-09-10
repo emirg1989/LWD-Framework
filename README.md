@@ -1,5 +1,5 @@
 ![LWD-Framework](https://github.com/emirg1989/LWD-Framework/blob/main/logo_transparent_background.png)
-Api restful framework for [dart](https://dart.dev/) and [flutter](https://flutter.dev/) developers
+Lightweight Dart Framework is an api restful framework for [dart](https://dart.dev/) and [flutter](https://flutter.dev/) developers.
 
 ```dart
 Future<void> main() async {
