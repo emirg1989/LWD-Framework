@@ -1,7 +1,7 @@
 import 'dart:io';
 import 'dart:async';
 
-import 'package:LWDFramework/lwd.dart';
+import 'package:lwdframework/lwd.dart';
 
 class LWDIO {
   Future server(Handler handler, address, port) async {

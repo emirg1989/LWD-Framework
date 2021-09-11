@@ -1,7 +1,7 @@
 import 'dart:io';
 
-import 'package:LWDFramework/src/handler.dart';
-import 'package:LWDFramework/src/lwd_response.dart';
+import 'package:lwdframework/src/handler.dart';
+import 'package:lwdframework/src/lwd_response.dart';
 import 'package:path_to_regexp/path_to_regexp.dart';
 
 class Route {

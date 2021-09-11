@@ -1,8 +1,8 @@
 import 'dart:io';
 
-import 'package:LWDFramework/src/http_method.dart';
-import 'package:LWDFramework/src/lwd_response.dart';
-import 'package:LWDFramework/src/route.dart';
+import 'package:lwdframework/src/http_method.dart';
+import 'package:lwdframework/src/lwd_response.dart';
+import 'package:lwdframework/src/route.dart';
 import 'package:meta/meta.dart';
 
 @sealed

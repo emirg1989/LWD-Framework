@@ -1,6 +1,6 @@
 import 'dart:async';
 import 'dart:io';
 
-import 'package:LWDFramework/src/lwd_response.dart';
+import 'package:lwdframework/lwd.dart';
 
 typedef Handler = FutureOr<LWDResponse> Function(HttpRequest request);
