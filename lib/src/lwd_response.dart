@@ -2,26 +2,14 @@ class LWDResponse {
   final int statusCode;
   final String body;
 
-  LWDResponse.ok(
-    body, {
-    Map<String, Object> headers,
-  }) : this(200, body: body, headers: headers);
+  LWDResponse.ok(body) : this(200, body);
 
-  LWDResponse.notFound(
-    body, {
-    Map<String, Object> headers,
-  }) : this(404, body: body ?? 'Not Found', headers: headers);
+  LWDResponse.notFound(body) : this(404, body ?? 'Not Found');
 
-  LWDResponse.internalServerError(
-    body, {
-    Map<String, Object> headers,
-  }) : this(500, body: body ?? 'Internal server error', headers: headers);
+  LWDResponse.internalServerError(body)
+      : this(500, body ?? 'Internal server error');
 
-  LWDResponse(
-    this.statusCode, {
-    this.body,
-    Map<String, Object> headers,
-  }) {
+  LWDResponse(this.statusCode, this.body) {
     if (statusCode < 100) {
       throw ArgumentError('Invalid status code: $statusCode.');
     }

@@ -1,7 +1,7 @@
 import 'dart:io';
 
-import 'package:LWDFramework/lwd.dart';
-import 'package:LWDFramework/lwdio.dart';
+import 'package:lwdframework/lwd.dart';
+import 'package:lwdframework/lwdio.dart';
 
 Future<void> main(List<String> arguments) async {
   final address = '127.0.0.1';

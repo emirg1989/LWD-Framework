@@ -1,5 +1,6 @@
 import 'dart:io';
 
+import 'package:lwdframework/lwd.dart';
 import 'package:lwdframework/src/http_method.dart';
 import 'package:lwdframework/src/lwd_response.dart';
 import 'package:lwdframework/src/route.dart';
@@ -9,7 +10,7 @@ import 'package:meta/meta.dart';
 class LWDRouter {
   final List<Route> _routes = [];
 
-  void addRoute(String verb, String route, Function handler) {
+  void addRoute(String verb, String route, Handler handler) {
     if (!isHttpMethod(verb)) {
       throw ArgumentError.value(verb, 'verb', 'Method not supported');
     }
@@ -17,7 +18,7 @@ class LWDRouter {
     _routes.add(Route(verb, route, handler));
   }
 
-  void get(String route, Function handler) => addRoute('GET', route, handler);
+  void get(String route, Handler handler) => addRoute('GET', route, handler);
 
   Future<LWDResponse> call(HttpRequest request) async {
     for (var route in _routes) {
