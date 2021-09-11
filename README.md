@@ -24,3 +24,6 @@ Dart SDK 2.7.0 or higher is required.
 ```bash
 $ dart pub add lwdframework
 ```
+This will add a line like this to your package's pubspec.yaml (and run an implicit dart pub get):
+dependencies:
+  lwdframework: ^0.1.0
