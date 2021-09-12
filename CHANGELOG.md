@@ -1,3 +1,6 @@
+## 0.3.2
+
+- add http and loggin libraries
 ## 0.3.1
 
 - add HEAD POST PUT DELETE CONNECT OPTIONS TRACE PATCH methods
