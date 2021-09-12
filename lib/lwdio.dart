@@ -15,9 +15,11 @@ class LWDIO {
   Future<void> handlerRequest(HttpRequest request, Handler handler) async {
     var response = await handler(request);
     var httpResponse = request.response;
-    request.headers.forEach((name, values) {
+    print(request.contentLength);
+    //TO-DO: debo setear los headers
+    /*request.headers.forEach((name, values) {
       httpResponse.headers.add(name, values);
-    });
+    });*/
     httpResponse.statusCode = response.statusCode;
     httpResponse.write(response.body);
     await httpResponse.close();

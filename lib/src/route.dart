@@ -14,7 +14,7 @@ class Route {
     final parameters = <String>[];
     final tokens = parse(path, parameters: parameters);
     final regExp = tokensToRegExp(tokens);
-    if (regExp.hasMatch(path)) {
+    if (regExp.hasMatch(this.path)) {
       return true;
     }
     return false;

@@ -9,4 +9,5 @@ const List<String> httpMethods = [
   'CONNECT',
   'OPTIONS',
   'TRACE',
+  'PATCH'
 ];

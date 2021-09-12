@@ -1,6 +1,6 @@
 name: lwdframework
 description: Lightweight Dart Framework is an api restful framework for dart and flutter developers.
-version: 0.2.1
+version: 0.3.1
 homepage: https://github.com/emirg1989/LWD-Framework
 
 environment:
