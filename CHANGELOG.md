@@ -1,3 +1,6 @@
+## 0.3.1
+
+- add HEAD POST PUT DELETE CONNECT OPTIONS TRACE PATCH methods
 ## 0.2.1
 
 - Change sdk 2.14.0.
