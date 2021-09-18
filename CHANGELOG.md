@@ -1,3 +1,6 @@
+## 0.4.0
+
+- add pwd request
 ## 0.3.2
 
 - add http and loggin libraries
