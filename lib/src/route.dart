@@ -1,5 +1,6 @@
 import 'dart:io';
 
+import 'package:lwdframework/lwd.dart';
 import 'package:lwdframework/src/handler.dart';
 import 'package:lwdframework/src/lwd_response.dart';
 import 'package:path_to_regexp/path_to_regexp.dart';
@@ -20,7 +21,7 @@ class Route {
     return false;
   }
 
-  Future<LWDResponse> executeHandler(HttpRequest request) async {
+  Future<LWDResponse> executeHandler(LWDRequest request) async {
     return await handler(request);
   }
 }

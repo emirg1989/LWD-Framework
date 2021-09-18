@@ -1,0 +1,6 @@
+targets:
+  $default:
+    sources:
+      - "node/**"
+      - "test/**" # Include this if you want to compile tests.
+      - "example/**" # Include this if you want to compile examples.

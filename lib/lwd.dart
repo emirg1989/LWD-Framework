@@ -3,3 +3,4 @@ export 'src/handler.dart';
 export 'src/lwd_response.dart';
 export 'src/lwd_router.dart';
 export 'src/route.dart';
+export 'src/lwd_request.dart';
