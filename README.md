@@ -9,7 +9,7 @@ Future<void> main(List<String> arguments) async {
   final address = '127.0.0.1';
   const port = 4040;
   var router = LWDRouter();
-  router.get('/greeting', (HttpRequest request) {
+  router.get('/greeting', (LWDRequest request) {
     return LWDResponse.ok('hello world!');
   });
 
@@ -19,7 +19,7 @@ Future<void> main(List<String> arguments) async {
 ## Installation
 
 [download and install Dart](https://dart.dev/get-dart).
-Dart SDK 2.7.0 or higher is required.
+Dart SDK 2.14.0 or higher is required.
 
 ```bash
 $ dart pub add lwdframework
